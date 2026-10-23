@@ -165,3 +165,9 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: contain !important;
   margin: 0 auto;
 }
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.8rem;
+  width: auto;
+}
