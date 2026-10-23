@@ -141,3 +141,44 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
   overflow-wrap: break-word;
 }
+
+/* Banner: keep proportions on wide screens */
+.mast-banner {
+  background: #0b2e6d;
+}
+
+.mast-banner img {
+  display: block;
+  width: 100%;
+  max-width: 1600px;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 21 / 9;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center 45%;
+}
+
+/* Phones: show more of the image height */
+@media (max-width: 600px) {
+  .mast-banner img {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+/* Banner: show the full image, no cropping */
+.mast-banner {
+  background: #0b2e6d;
+  text-align: center;
+}
+
+.mast-banner img {
+  display: block;
+  width: 100%;
+  max-width: 1536px;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  margin: 0 auto;
+}
