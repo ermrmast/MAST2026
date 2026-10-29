@@ -171,3 +171,21 @@ h1, h2, h3, h4, h5, h6 {
   height: 1.8rem;
   width: auto;
 }
+
+/* Lists inside programme tables */
+.md-typeset table.schedule td ul {
+  margin: 0.3em 0 0 0;
+  padding-left: 1.2em;       /* room for the bullets inside the cell */
+  list-style-position: outside;
+}
+
+.md-typeset table.schedule td li {
+  margin: 0 0 0.25em 0;
+  padding-left: 0.1em;
+}
+
+/* Extra space between columns */
+.md-typeset table.schedule th,
+.md-typeset table.schedule td {
+  padding-right: 1.2em;
+}
